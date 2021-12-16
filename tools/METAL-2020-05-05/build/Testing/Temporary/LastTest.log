@@ -1,0 +1,1275 @@
+Start testing: Nov 02 17:22 CET
+----------------------------------------------------------
+1/12 Testing: NORMP
+1/12 Test: NORMP
+Command: "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/metaltest" "test_normp"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests
+"NORMP" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NORMP" end time: Nov 02 17:22 CET
+"NORMP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/12 Testing: BINORMP
+2/12 Test: BINORMP
+Command: "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/metaltest" "test_binormp"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests
+"BINORMP" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BINORMP" end time: Nov 02 17:22 CET
+"BINORMP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/12 Testing: BINORMQ
+3/12 Test: BINORMQ
+Command: "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/metaltest" "test_binormq"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests
+"BINORMQ" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BINORMQ" end time: Nov 02 17:22 CET
+"BINORMQ" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/12 Testing: SAMPLESIZE_NOGC
+4/12 Test: SAMPLESIZE_NOGC
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_01/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_01
+"SAMPLESIZE_NOGC" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## WARNING: No 'N' column found -- using DEFAULTWEIGHT = 4106
+## Processed 2361 markers ...
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 1.491e-12 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"SAMPLESIZE_NOGC" end time: Nov 02 17:22 CET
+"SAMPLESIZE_NOGC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/12 Testing: SAMPLESIZE_GC
+5/12 Test: SAMPLESIZE_GC
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_03/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_03
+"SAMPLESIZE_GC" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Genomic control correction of input statistics enabled
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Genomic control parameter is 1.285, adjusting test statistics
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Genomic control parameter is 1.094, adjusting test statistics
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## WARNING: No 'N' column found -- using DEFAULTWEIGHT = 4106
+## Genomic control parameter is 1.024, adjusting test statistics
+## Processed 2361 markers ...
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 6.392e-12 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"SAMPLESIZE_GC" end time: Nov 02 17:22 CET
+"SAMPLESIZE_GC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/12 Testing: STDERR_NOGC
+6/12 Test: STDERR_NOGC
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_04/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_04
+"STDERR_NOGC" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Meta-analysis will be based on effect sizes and their standard errors ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processed 2361 markers ...
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 4.671e-10 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"STDERR_NOGC" end time: Nov 02 17:22 CET
+"STDERR_NOGC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/12 Testing: STDERR_GC
+7/12 Test: STDERR_GC
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_05/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_05
+"STDERR_GC" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Meta-analysis will be based on effect sizes and their standard errors ...
+## Genomic control correction of input statistics enabled
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Genomic control parameter is 1.307, adjusting test statistics
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Genomic control parameter is 1.095, adjusting test statistics
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Genomic control parameter is 1.039, adjusting test statistics
+## Processed 2361 markers ...
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 1.456e-09 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"STDERR_GC" end time: Nov 02 17:22 CET
+"STDERR_GC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/12 Testing: SAMPLESIZE_NOGC_HETEROGENEITY
+8/12 Test: SAMPLESIZE_NOGC_HETEROGENEITY
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_06/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_06
+"SAMPLESIZE_NOGC_HETEROGENEITY" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## WARNING: No 'N' column found -- using DEFAULTWEIGHT = 4106
+## Processed 2361 markers ...
+
+###########################################################################
+## Running second pass analysis to evaluate heterogeneity...
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processing file '../Data/DGI_three_regions.txt'
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 1.491e-12 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"SAMPLESIZE_NOGC_HETEROGENEITY" end time: Nov 02 17:22 CET
+"SAMPLESIZE_NOGC_HETEROGENEITY" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/12 Testing: STDERR_NOGC_HETEROGENEITY
+9/12 Test: STDERR_NOGC_HETEROGENEITY
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_07/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_07
+"STDERR_NOGC_HETEROGENEITY" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Meta-analysis will be based on effect sizes and their standard errors ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processed 2361 markers ...
+
+###########################################################################
+## Running second pass analysis to evaluate heterogeneity...
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processing file '../Data/DGI_three_regions.txt'
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 4.671e-10 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"STDERR_NOGC_HETEROGENEITY" end time: Nov 02 17:22 CET
+"STDERR_NOGC_HETEROGENEITY" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/12 Testing: SAMPLESIZE_NOGC_OVERLAP_HETEROGENEITY
+10/12 Test: SAMPLESIZE_NOGC_OVERLAP_HETEROGENEITY
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_08/METAANALYSIS1.TBL" "-DMETALTEST=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/metaltest" "-DCOLUMN=HetPVal" "-DCORR=0.99" "-DTOL=1.0" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare_columns.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_08
+"SAMPLESIZE_NOGC_OVERLAP_HETEROGENEITY" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Correction for samples overlap enabled
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Samples overlap for 838 marker(s) with 2000<=WEIGHT<3000: 0.0491715341
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## WARNING: No 'N' column found -- using DEFAULTWEIGHT = 4106
+## Samples overlap for 37 marker(s) with 5000<=WEIGHT<6000: 0.2057147037
+## Samples overlap for 897 marker(s) with 6000<=WEIGHT<7000: 0.0000000000
+## Processed 2361 markers ...
+
+###########################################################################
+## Running second pass analysis to evaluate heterogeneity...
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processing file '../Data/DGI_three_regions.txt'
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 2.425e-12 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"SAMPLESIZE_NOGC_OVERLAP_HETEROGENEITY" end time: Nov 02 17:22 CET
+"SAMPLESIZE_NOGC_OVERLAP_HETEROGENEITY" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/12 Testing: TRACK_POSITIONS
+11/12 Test: TRACK_POSITIONS
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_09/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_09
+"TRACK_POSITIONS" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+## Set chromosome header to CHR ...
+## Set position header to POS ...
+## Tracking of chromosomes and positions is enabled
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+## Set chromosome header to CHR ...
+## Set position header to POS ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+## Set chromosome header to CHR ...
+## Set position header to POS ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## WARNING: No 'N' column found -- using DEFAULTWEIGHT = 4106
+## Processed 2361 markers ...
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 1.491e-12 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TRACK_POSITIONS" end time: Nov 02 17:22 CET
+"TRACK_POSITIONS" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/12 Testing: PRINT_PRECISION
+12/12 Test: PRINT_PRECISION
+Command: "/usr/bin/cmake" "-DMETAL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/metal/metal" "-DMETAL_TBL=/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/test_10/METAANALYSIS1.TBL" "-P" "/media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/tests/compare.cmake"
+Directory: /media/axel/Dateien/Arbeit_Gen/covid_resequencing_check_gwas_datafreeze/analysis_pipeline/tools/METAL-2020-05-05/build/tests/test_10
+"PRINT_PRECISION" start time: Nov 02 17:22 CET
+Output:
+----------------------------------------------------------
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2020-05-05
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable tracking of chromosomes and positions ...
+#   TRACKPOSITIONS   [ON|OFF]                    (default = OFF
+#   CHROMOSOMELABEL  [LABEL]                     (default = 'CHROMOSOME')
+#   POSITIONLABEL    [LABEL]                     (default = 'POSITION')
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options to account for samples overlap ...
+#   OVERLAP          [ON|OFF]                    (default = OFF)
+#   ZCUTOFF          [NUMBER]                    (default = 1.0)
+#
+# Options for general analysis control ...
+#   PROCESSFILE            [FILENAME]
+#   OUTFILE                [PREFIX SUFFIX]       (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS            [NUMBER]              (default = 20)
+#   VERBOSE                [ON|OFF]              (default = 'OFF')
+#   LOGPVALUE              [ON|OFF]              (default = 'OFF')
+#   EFFECT_PRINT_PRECISION [NUMBER]              (default = '4')
+#   STDERR_PRINT_PRECISION [NUMBER]              (default = '4')
+#   ANALYZE                [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal.txt ...
+## Meta-analysis will be based on effect sizes and their standard errors ...
+## Set marker header to SNP ...
+## Set weight header to N ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to EFFECT_ALLELE_FREQ ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to P_VAL ...
+###########################################################################
+## Processing file '../Data/DGI_three_regions.txt'
+## Processed 2369 markers ...
+
+## Set marker header to SNP ...
+## Set allele headers to EFFECT_ALLELE and NON_EFFECT_ALLELE ...
+## Set frequency header to FREQ_EFFECT ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set weight header to N ...
+## Set effect header to BETA ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/MAGIC_FUSION_Results.txt.gz'
+## Processed 2293 markers ...
+
+## Set marker header to SNP ...
+## Set default weight to 4106.00 ...
+## Set allele headers to AL1 and AL2 ...
+## Set frequency header to FREQ1 ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to EFFECT ...
+## Set standard error header to SE ...
+## Set p-value header to PVALUE ...
+###########################################################################
+## Processing file '../Data/magic_SARDINIA.tbl'
+## Processed 2361 markers ...
+
+## Set print pecision for Effect to 12 ...
+## Set print pecision for StdErr to 12 ...
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'METAANALYSIS1.TBL'
+## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Completed meta-analysis for 2495 markers!
+## Smallest p-value is 4.671e-10 at marker 'rs560887'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PRINT_PRECISION" end time: Nov 02 17:22 CET
+"PRINT_PRECISION" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 02 17:22 CET

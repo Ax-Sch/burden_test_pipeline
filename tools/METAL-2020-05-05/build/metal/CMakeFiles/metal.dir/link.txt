@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_FILE_OFFSET_BITS=64 -O3 -DNDEBUG  -rdynamic CMakeFiles/metal.dir/Main.cpp.o  -o metal  ../libsrc/libgoncalo.a -lz 

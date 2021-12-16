@@ -1,0 +1,31 @@
+VERBOSE ON
+
+SEPARATOR	TAB
+MARKER	ID
+ALLELE	ALT REF
+PVALUE	P
+EFFECT	log(OR)
+WEIGHT	OBS_CT
+STDERR LOG(OR)_SE
+
+SCHEME STDERR
+# check in Kosmicki:
+# Results were subsequently meta-analyzed across studies and ancestries using an inverse variance-
+# weighed fixed-effects meta-analysis
+# https://ars.els-cdn.com/content/image/1-s2.0-S0002929721002226-mmc1.pdf
+
+#By default, METAL combines p-values across studies taking into account a study specific weight (typically, the sample size) and direction of effect. This behavior can be requested explicitly with the SCHEME SAMPLESIZE command. An alternative can be requested with the SCHEME STDERR command and weights effect size estimates using the inverse of the corresponding standard errors. To enable this option, you will also need to specify which of your input columns contains standard error information using the STDERRLABEL command (or STDERR for short). While standard error based weights are more common in the biostatistical literature, if you decide to use this approach, it is very important to ensure that effect size estimates (beta coefficients) and standard errors use the same units in all studies (i.e. make sure that the exact same trait was examined in each study and that the same transformations were applied). Inconsistent use of measurement units across studies is the most common cause of discrepancies between these two analysis strategies.
+
+
+
+PROCESS	assoc_results/additive_firth_comb_italian.PHENO1.glm.firth
+PROCESS	assoc_results/additive_firth_comb_spanish.PHENO1.glm.firth
+
+
+OUTFILE assoc_results/additive_meta_analysis .tbl
+
+
+ANALYZE 
+QUIT
+
+
